@@ -13,9 +13,9 @@ const tempoNaTela = document.querySelector('#timer');
 const incrementarButton = document.querySelector('#increase-time');
 const decrementarButton = document.querySelector('#decrease-time');
 
-const musicaRelaxar = new Audio('/sons/luna-rise-part-one.mp3');
-const musicaFimSecao = new Audio('/sons/beep.mp3');
-const musicaControl = new Audio('/sons/click-control.mp3');
+const musicaRelaxar = new Audio('../sons/luna-rise-part-one.mp3');
+const musicaFimSecao = new Audio('../sons/beep.mp3');
+const musicaControl = new Audio('../sons/click-control.mp3');
 
 let tempoDecorridoEmSegundos = 1500;
 let intervaloId = null;
@@ -54,7 +54,7 @@ function alterarContexto(contexto) {
         contexto.classList.remove('active');
     });
     html.setAttribute('data-contexto', contexto);
-    banner.setAttribute('src', `/imagens/${contexto}.png`);
+    banner.setAttribute('src', `../imagens/${contexto}.png`);
     switch (contexto) {
         case "foco":
             titulo.innerHTML = `
@@ -121,13 +121,13 @@ function iniciarOuPausar() {
     controlButton();
     intervaloId = setInterval(contagemRegressiva, 1000);
     iniciarOuPausarButton.textContent = "Pausar";
-    iniciarOuPausarButtonIcone.setAttribute('src', `/imagens/pause.png`);
+    iniciarOuPausarButtonIcone.setAttribute('src', `../imagens/pause.png`);
 }
 
 function zerar() {
     clearInterval(intervaloId);
     iniciarOuPausarButton.textContent = "Começar";
-    iniciarOuPausarButtonIcone.setAttribute('src', `/imagens/play_arrow.png`);
+    iniciarOuPausarButtonIcone.setAttribute('src', `../imagens/play_arrow.png`);
     intervaloId = null;
 }
 
