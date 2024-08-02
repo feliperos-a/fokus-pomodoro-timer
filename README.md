@@ -9,16 +9,6 @@ Adicionei algumas melhorias no projeto original para praticar o JavaScript e dei
 - **Controle de Tempo:** Adicionados botões para aumentar e diminuir o tempo do temporizador.
 - **Feedback Sonoro:** Incluídos sons para iniciar, pausar e finalizar o temporizador, proporcionando uma melhor experiência interativa.
 
-## O que foi estudado
-
-Durante o curso, você:
-
-- **Construiu uma aplicação de temporizador estilo Pomodoro** do zero.
-- **Conheceu na prática métodos de manipulação de elementos no DOM**, incluindo estilos CSS, imagens e textos.
-- **Alterou atributos e classes de forma dinâmica com JavaScript**.
-- **Criou eventos de interação com a pessoa usuária**.
-- **Utilizou objetos utilitários do JavaScript** para melhorar a funcionalidade e a interatividade da aplicação.
-
 # :rocket: Tecnologias
 
 <p align="center">
